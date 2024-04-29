@@ -1,7 +1,7 @@
 .header {
     width: 100%;
-    height: 350px;
-    background-image: url(https://dadabooksearch.netlify.app/images/headerbg.jpg);
+    height: 500px;
+    background-image: url(https://www.dglam.org.uk/wp-content/uploads/2024/01/DGLAM-Library-James-Mulkeen-WEB-JPM23-3230.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -10,9 +10,13 @@
     justify-content: center;
 }
 .header__text p{
-    font-size:31px;
+    font-size:40px;
     color: white;
     font-weight: bolder;
+    background-color: #f4cd8f;
+    border-radius: 4px;
+    letter-spacing: 3px;
+    border: 2px solid;
 }
 .header__text{
     text-align: center;

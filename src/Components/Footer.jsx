@@ -37,7 +37,6 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.footer__text}>
-      <p>Designed & Built by</p>
       <p>Aytac Rzayeva</p>
 
       </div>

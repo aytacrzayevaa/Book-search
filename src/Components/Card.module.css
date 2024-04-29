@@ -5,6 +5,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+    padding:20px;
 }
 .card{
     display: flex;
@@ -34,12 +35,13 @@
     gap: 25px;
 }
 .card__body h2{
+    height: 60px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     border-top: 1px solid rgba(131, 130, 130, 0.438);
 }
 .card__body h3{
-    padding: 5px;
+    padding: 10px;
     border-top: 1px solid rgba(131, 130, 130, 0.438);
 }
 .card__btns{

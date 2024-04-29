@@ -1,8 +1,15 @@
 import React from 'react';
-import styles from './Card.module.css'
+import styles from './Card.module.css';
+
 const Card = ({ book }) => {
+  const shortenTitle = (title, maxLength) => {
+    if (title.length > maxLength) {
+      return `${title.substring(0, maxLength)}...`;
+    }
+    return title;
+  };
+
   return (
-    
     <div className={styles.card} key={book.id}>
       <div className={styles.card__img}>
         <img
@@ -11,8 +18,8 @@ const Card = ({ book }) => {
         />
       </div>
       <div className={styles.card__body}>
-        <h2>{book.volumeInfo.title}</h2>
-        <h3>{book.volumeInfo.authors.join(', ')}</h3>
+        <h2>{shortenTitle(book.volumeInfo.title, 35)}</h2>
+        <h3>{shortenTitle(book.volumeInfo.authors.join(', '),20)}</h3>
         <div className={styles.card__btns}>
           <button>
             <a href={book.volumeInfo.previewLink}>Preview</a>
@@ -23,7 +30,6 @@ const Card = ({ book }) => {
         </div>
       </div>
     </div>
-  
   );
 };
 

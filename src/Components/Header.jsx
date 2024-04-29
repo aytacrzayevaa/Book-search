@@ -20,7 +20,7 @@ const Header = ({ setBooks }) => {
     <div className={styles.header}>
       <div className={styles.content}>
         <div className={styles.header__text}>
-          <p>Dada Book Searching App</p>
+          <p>My Book Searching App</p>
         </div>
         <div className={styles.input}>
           <input
